@@ -19,7 +19,7 @@ const App: React.FC = () => {
     // Welcome message
     const welcomeMsg: Message = {
       id: 'welcome',
-      text: "Systems online. I am Polaris v0. How may I assist you today?",
+      text: "Systems online. I am Polaris. How may I assist you today?",
       sender: Sender.Bot,
       timestamp: new Date(),
     };
@@ -119,7 +119,7 @@ const App: React.FC = () => {
       <header className="relative z-20 flex items-center justify-between px-6 py-4 bg-slate-900/50 backdrop-blur-md border-b border-slate-800">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
-          <h1 className="text-xl font-semibold tracking-wide text-slate-100">Polaris v0</h1>
+          <h1 className="text-xl font-semibold tracking-wide text-slate-100">Polaris 0.0</h1>
         </div>
         <div className="text-xs font-mono text-slate-500 flex items-center gap-1">
           <Sparkles size={12} /> GEMINI-2.5-FLASH
@@ -162,7 +162,7 @@ const App: React.FC = () => {
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Ask Polaris v0..."
+                placeholder="Ask Polaris..."
                 disabled={isLoading}
                 onFocus={() => { if(orbState === OrbState.Idle) setOrbState(OrbState.Listening) }}
                 onBlur={() => { if(orbState === OrbState.Listening) setOrbState(OrbState.Idle) }}

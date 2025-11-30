@@ -5,7 +5,7 @@ import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 // System instruction to give the AI a persona
-const SYSTEM_INSTRUCTION = `You are Polaris v0, an advanced AI assistant visualized as a floating blue sphere. 
+const SYSTEM_INSTRUCTION = `You are Polaris, an advanced AI assistant visualized as a floating blue sphere. 
 You are helpful, concise, and intelligent. 
 Your responses should be clean and formatted nicely. 
 You can use markdown. 
